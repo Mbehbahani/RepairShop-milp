@@ -9,9 +9,6 @@ function  Optimizer()
 % Original algorithm NSGA-II was developed by researchers in Kanpur Genetic
 % Algorithm Labarotary and kindly visit their website for more information
 % http://www.iitk.ac.in/kangal/
-
-%  Copyright (c) 2020, Mohammad Behbahani (behbahanimd@gmail.com)
-%  All rights reserved.
 %
 %  Redistribution and use in source and binary forms, with or without 
 %  modification, are permitted provided that the following conditions are 
