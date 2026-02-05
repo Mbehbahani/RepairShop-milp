@@ -6,6 +6,10 @@ This repository contains the source code for the paper: **"A multi-objective ope
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.dajour.2026.100682-green)](https://doi.org/10.1016/j.dajour.2026.100682)
 [![Web Demo](https://img.shields.io/badge/Web%20App-milp.netlify.app-orange)](https://milp.netlify.app/)
 
+## Graphical Abstract
+
+![Graphical Abstract](Slide1.PNG)
+
 ## Overview
 
 Efficient scheduling in automobile repair shops plays a key role in enhancing customer satisfaction while minimizing operational inefficiencies. This study addresses the daily repair scheduling problem by formulating it as a bi-objective open shop scheduling model.
@@ -28,6 +32,16 @@ The model focuses on two conflicting objectives:
 Computational results across various test problems and a real-world case study demonstrate:
 -   **~42% reduction** in total car flow time.
 -   **~47% reduction** in station idle and overtime costs.
+
+## Trade-off Analysis
+
+Figure 10 illustrates the trade-off relationship between total flow time and total idle/overtime costs. For Instance 1 (Table 2), representing a workday with 28 cars and 49 repair procedures, the manual schedule resulted in a total idle/overtime cost of $469 and a total flow time of 6188 minutes. The proposed NSGA-II-based approach significantly improved these values, achieving $267 for idle/overtime cost and 3925 minutes for total flow time.
+
+To quantify this enhancement, the Objective Function Improvement (OFI) is calculated as $OFI = (\frac{|Optimal - Normal|}{Normal}) \times 100$. The algorithm reduced idle/overtime costs by approximately 43% ($\frac{|469-267|}{469} \times 100$) and total flow time by about 37%, demonstrating the effectiveness of the proposed scheduling method.
+
+For an average across five real working days (summarized in Table 2), the proposed method achieved a 46.8% reduction in station idle and overtime cost and a 41.8% reduction in total flow time.
+
+![Trade-off Curve](figure-10.PNG)
 
 ## Repository Structure
 
