@@ -1,0 +1,23 @@
+# Ignore version control
+.git
+.gitignore
+
+# Bytecode
+__pycache__
+*.py[cod]
+
+# Virtual envs & local dev files
+.env
+.venv
+env/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# OS / editor files
+.DS_Store
+.idea
+.vscode
+
+.schedule.json
+.schedule2.json
