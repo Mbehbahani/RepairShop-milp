@@ -1,6 +1,8 @@
 # A multi-objective open shop model for optimizing scheduling in automotive repair shops
 
-This repository contains the source code for the paper: **"A multi-objective open shop model for optimizing scheduling in automotive repair shops"** published in the *Decision Analytics Journal (2026)*.
+Repair-shop scheduling models balancing vehicle flow time and station costs, with GAMS/CPLEX, MATLAB NSGA-II and Python OR-Tools.
+
+Code accompanies [A multi-objective open shop model for optimizing scheduling in automotive repair shops](https://doi.org/10.1016/j.dajour.2026.100682), published in Decision Analytics Journal (2026).
 
 [![Article](https://img.shields.io/badge/Article-ScienceDirect-blue)](https://www.sciencedirect.com/science/article/pii/S277266222600010X)
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.dajour.2026.100682-green)](https://doi.org/10.1016/j.dajour.2026.100682)
@@ -25,11 +27,11 @@ The model focuses on two conflicting objectives:
 -   **Mathematical Formulation:** A Mixed-Integer Linear Programming (MILP) model developed for exact optimization of small-to-medium instances.
 -   **Metaheuristic Solution:** A modified **Non-dominated Sorting Genetic Algorithm II (NSGA-II)** featuring a station-sequence chromosome and feasibility-aware decoding for large-scale instances.
 -   **Web-Based Interface:** An interactive dashboard deployed at [https://milp.netlify.app/](https://milp.netlify.app/) for visualizing schedules via Gantt charts (powered by Google OR-Tools).
--   **Real-World Application:** Validated with data from one of the largest automotive repair centers in Iran, achieving significant efficiency gains.
+-   **Real-World Application:** Evaluated using automotive repair-centre data, comparing optimised schedules with the original schedules.
 
 ## Results Highlights
 
-Computational results across various test problems and a real-world case study demonstrate:
+The paper reports the following average improvements across five evaluated working days, relative to the original schedules:
 -   **~42% reduction** in total car flow time.
 -   **~47% reduction** in station idle and overtime costs.
 
@@ -71,7 +73,6 @@ If you use this code or model in your research, please cite:
   title={A multi-objective open shop model for optimizing scheduling in automotive repair shops},
   author={Behbahani, Mohammad and Izadbakhsh, Reza and Izadbakhsh, Hamidreza},
   journal={Decision Analytics Journal},
-  volume={100682},
   year={2026},
   doi={10.1016/j.dajour.2026.100682}
 }
